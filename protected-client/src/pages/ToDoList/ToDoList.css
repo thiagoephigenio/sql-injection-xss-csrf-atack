@@ -1,0 +1,49 @@
+.card-task {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 0.25rem;
+  max-width: 500px;
+  border: 1px solid var(--secondary);
+}
+
+.card-task.empty{
+  color: var(--gray-dark);
+}
+
+.check-task, .title-task {
+  display: inline;
+}
+
+.check-task {
+  float: right;
+}
+
+.title-task {
+  color: var(--gray-dark);
+}
+
+.btn-remove {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 1.60rem;
+  padding: 2px;
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--primary);
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: .25rem;
+}
+
+.btn-remove:hover {
+  color: var(--primary);
+  background-color: var(--orange-hover);
+  border-color:var(--orange-hover);
+}
+
+.btn-remove:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem var(--orange-invisible);
+}
